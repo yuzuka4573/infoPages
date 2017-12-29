@@ -23,156 +23,175 @@
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
   <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
-
+  <!-- smooth scrolling -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('a[href^=#]').click(function() {
+        var speed = 1000;
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({
+          scrollTop: position
+        }, speed, "swing");
+        return false;
+      });
+    });
+  </script>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-md navbar-default fixed-top ">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           <span class="navbar-toggler-icon"></span>
           <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">いえ～るふーど</a>
-      <div class="collapse navbar-collapse" id="navbar-menu">
-          <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="#APage">Adout</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#PPage">Product</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#FPage">Funding</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#PrPage">Process</a>
-              </li>
-          </ul>
-      </div>
+    <a class="navbar-brand" href="#">いえ～るふーど</a>
+    <div class="collapse navbar-collapse" id="navbar-menu">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#APage">Adout</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#PPage">Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#FPage">Funding</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#PrPage">Process</a>
+        </li>
+      </ul>
+    </div>
   </nav>
   <div class="wrapper">
-    <div class="page-header section-dark" style="background-imahe: url('assets/img/antoine-barres.jpg')">
-    <div class="content-center">
-      <div class="container">
-        <div class="title-brand">
-      <h1>いえ～るふーど</h1>
+    <div class="page-header section-dark" style="background-image: url('assets/img/glasses.png')">
+      <div class="content-center">
+        <div class="container">
+          <div class="title-brand">
+            <h1>いえ～るふーど</h1>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-  </div>
-  </div>
     <div class="main">
       <div id="APage" class="container tim-row">
-      <h2>About</h2>
-      <div>
-        <p>疲れが癒えない人のために作られたフードがいえ～るふーどです。</p>
-        <p></p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-      </div>
-    </div>
-    <div id="PPage" class="container tim-row">
-      <h2>Product</h2>
-      <div>
-        <p>体を温めながら寝れるフードです</p>
-        <p>あなたの目と首元、肩を小豆がじんわりあためてくれます</p>
-        <p>目、首元、肩を温めることによって疲れを取る手助けをしてくれます</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-      </div>
-    </div>
-    <div id="FPage" class="container tim-row">
-      <h2>Funding</h2>
-      <div>
-        <p>この製品を作るために、支援をお願いしています</p>
+        <h2>About</h2>
         <div>
-          <h3>支援希望額</h3>
+          <p>疲れが癒えない人のために作られたフードがいえ～るふーどです。</p>
+          <p></p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
         </div>
-        <p>＞＞＞5000兆円＜＜＜</p>
-        <h3>内訳</h3>
+      </div>
+      <div id="PPage" class="container tim-row">
+        <h2>Product</h2>
+        <div>
+          <p>体を温めながら寝れるフードです</p>
+          <p>あなたの目と首元、肩を小豆がじんわりあためてくれます</p>
+          <p>目、首元、肩を温めることによって疲れを取る手助けをしてくれます</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+        </div>
+      </div>
+      <div id="FPage" class="container tim-row">
+        <h2>Funding</h2>
+        <div>
+          <p>この製品を作るために、支援をお願いしています</p>
+          <div>
+            <h3>支援希望額</h3>
+          </div>
+          <p>＞＞＞5000兆円＜＜＜</p>
+          <h3>内訳</h3>
 
-        <li>材料費 : 3000万円(初期生産　1億個)</li>
-        <li>機材費 : 15億円(ミシン、工場代)</li>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <h3>支援状況</h3>
-        <div class="progress">
-    <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
+          <li>材料費 : 3000万円(初期生産　1億個)</li>
+          <li>機材費 : 15億円(ミシン、工場代)</li>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <h3>支援状況</h3>
+          <div class="progress">
+            <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div id="PrPage" class="container tim-row">
-      <h2>Process</h2>
-      <div>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
-        <p>String String String String String String String String String String String String String String String String String String String</p>
+      <div id="PrPage" class="container tim-row">
+        <h2>Process</h2>
+        <div>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+          <p>String String String String String String String String String String String String String String String String String String String</p>
+        </div>
       </div>
-    </div>
     </div>
   </div>
 </body>
-
+<foot>
+  <div class="content-center">
+    <p> Page cording by Yuto Kurashige and Satsuki Ui</p>
+  </div>
+</foot>
 <!-- Core JS Files -->
 <script src="assets/js/jquery-3.2.1.js" type="text/javascript"></script>
 <script src="assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
